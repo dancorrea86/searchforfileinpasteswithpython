@@ -20,9 +20,15 @@ def returnListOfPastesForSearch():
 
 def searchFileInDirectory():
     listOfPastesOfCompanys = returnListOfPastesForSearch()
+    print(listOfPastesOfCompanys)
     for item in listOfPastesOfCompanys:
         print( item )
         print (item  + '/' + 'doc.html' )
         print(os.path.isfile(item + '/' + 'doc.html' )) #posso usar uma REGEX aqui
 
-searchFileInDirectory()
+def searchFileInDirectoryList():
+    listOfPastesOfCompanys = returnListOfPastesForSearch()
+    for paste in listOfPastesOfCompanys:
+      print(paste.split('c-test-files/')[1])
+
+searchFileInDirectoryList()
