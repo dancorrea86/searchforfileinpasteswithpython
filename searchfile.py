@@ -28,7 +28,7 @@ def searchFileInDirectory():
 
 def searchFileInDirectoryList():
     listOfPastesOfCompanys = returnListOfPastesForSearch()
-    for paste in listOfPastesOfCompanys:
-      print(paste.split('c-test-files/')[1])
+    print (listOfPastesOfCompanys[0]+'/')
+    print(os.listdir(listOfPastesOfCompanys[0]+'/'))
 
 searchFileInDirectoryList()
