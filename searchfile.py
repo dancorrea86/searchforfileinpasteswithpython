@@ -27,8 +27,9 @@ def searchFileInDirectory():
         print(os.path.isfile(item + '/' + 'doc.html' )) #posso usar uma REGEX aqui
 
 def searchFileInDirectoryList():
-    listOfPastesOfCompanys = returnListOfPastesForSearch()
-    print (listOfPastesOfCompanys[0]+'/')
-    print(os.listdir(listOfPastesOfCompanys[0]+'/'))
+    for dir_path, sub_dir, files in os.walk(os.path.dirname(os.path.realpath(__file__))+'/c-test-files'):
+      print (dir_path)
+      print (sub_dir)
+      print ('*'* 60)
 
 searchFileInDirectoryList()
