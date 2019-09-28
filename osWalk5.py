@@ -1,5 +1,6 @@
 # coding: UTF-8
 import os
+import re
 
 count_file = 0
 
@@ -8,7 +9,7 @@ dir1 = "/home/daniel/Programação/Projects/searchforfileinpasteswithpython/c-te
 for path, sub, filenames in os.walk(dir1):
 	sub = [n for n in sub]
 	content = sub + filenames
-
+	
 	for f in content:
-		count_file += 1
-		print ("Count: {} File Name: {}".format(count_file, f))
+		if re.search('[Gia]', str):
+			print('Print Path ', path)
