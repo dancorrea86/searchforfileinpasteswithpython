@@ -12,7 +12,10 @@ my_dir = "./c-test-files/"
 arquivo = open('Relatorio.txt', 'w')
 
 for dir, sub, files in os.walk(my_dir):
-	if dir == (my_dir  + str(initialNumberCompanyes) + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'):
+	print (dir.startswith(my_dir  + str(initialNumberCompanyes) + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'))
+	print (dir)
+	print (my_dir  + str(initialNumberCompanyes) + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração')
+	if dir.startswith(my_dir  + str(initialNumberCompanyes) + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'):
 		arquivo.write(str(initialNumberCompanyes)+'\n'+'\n')
 		for i in files:
 			arquivo.write(i+'\n')
