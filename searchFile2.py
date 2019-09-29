@@ -8,7 +8,7 @@ empresas = ['1000', '1001', '1002']
 ano = '2019'
 mes = '06.2019'
 
-my_dir = "/home/daniel/Programação/Projects/searchforfileinpasteswithpython/c-test-files/"
+my_dir = "./c-test-files/"
 
 for dir, sub, files in os.walk(my_dir):
 	if dir == (my_dir  + empresas[count] + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'):
