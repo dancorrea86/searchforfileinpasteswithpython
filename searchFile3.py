@@ -9,14 +9,14 @@ mes = '06.2019'
 
 my_dir = "./c-test-files/"
 
+arquivo = open('Relatorio.txt', 'w')
 
 for dir, sub, files in os.walk(my_dir):
 	if dir == (my_dir  + str(initialNumberCompanyes) + '/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'):
-		print (initialNumberCompanyes)
-		print ('')
+		arquivo.write(str(initialNumberCompanyes)+'\n'+'\n')
 		for i in files:
-			print (i)
-		print ('*' * 100)
-		print ('')
+			arquivo.write(i+'\n')
+		arquivo.write('*' * 100+'\n'+'\n')
 		initialNumberCompanyes -= 1
 
+arquivo.close()
