@@ -17,7 +17,3 @@ for dir, sub, files in os.walk(my_dir):
 		print ('*' * 60)
 		count -= 1
 
-
-
-#/home/daniel/Programação/Projects/searchforfileinpasteswithpython/c-test-files/1000/FISCAL/2019/06/2019/Declaração
-#/home/daniel/Programação/Projects/searchforfileinpasteswithpython/c-test-files/1000/FISCAL/2019/01.2019/Declaração
