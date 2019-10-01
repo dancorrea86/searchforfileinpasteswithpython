@@ -7,7 +7,7 @@ initialNumberCompanyes = 1002
 ano = '2019'
 mes = '06.2019'
 
-my_dir = "./c-test-files/"
+my_dir = "S:\CLIENTES 2018"
 
 arquivo = open('Relatorio.txt', 'w')
 
