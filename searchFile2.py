@@ -11,6 +11,7 @@ my_dir = "./c-test-files/"
 print (sorted(os.listdir(my_dir)))
 
 for root, subFolders, files in os.walk(my_dir):
+	subFolders.sort()
 	if root.startswith(my_dir + str(initialNumberCompanyes)) and root.endswith('/FISCAL/' + ano + '/' + mes + '/' + 'Declaração'):
 		print (initialNumberCompanyes)
 		print ('')
